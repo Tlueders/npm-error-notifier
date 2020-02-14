@@ -1,0 +1,20 @@
+{
+  "name": "npm-error-notifier",
+  "version": "1.0.0",
+  "description": "A Node.js error notifier utilizing the Honeybadger.io Exceptions API.",
+  "main": "src/main.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Tanner Lueders",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "chai": "^4.2.0",
+    "mocha": "^7.0.1",
+    "stack-trace": "0.0.10"
+  }
+}
