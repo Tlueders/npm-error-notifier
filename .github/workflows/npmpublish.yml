@@ -2,7 +2,7 @@ name: Node.js Honeybadger.io Error Notifier
 
 on:
   release:
-    types: [created]
+    types: [push, pull_request]
 
 jobs:
   build:
