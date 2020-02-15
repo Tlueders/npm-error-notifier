@@ -18,7 +18,6 @@ npm install '/path/to/cloned/repo'
 var Notifier = require('npm-error-notifier');
 var notifier = new Notifier({api: 'honeybadger-api-key', env: 'production'});
 ```
-
 ---
 
 ### Example Usage
@@ -30,5 +29,15 @@ try{
     throw new Error('manually create an error');
 }catch(err) {
     notfier.notify(err);
+}
+```
+
+###Notes
+When configuring the Notifier, these key/values are required:
+*Required Keys*
+```javascript
+{
+    api: 'honeybadger_-_api_key',
+    env: 'environment_name
 }
 ```
