@@ -3,19 +3,19 @@ var Notifier = require('../lib/main.js');
 
 describe('Notifier', () => {
     describe('#setConstructor()', () => {
-        it('provided missing config options', () => {
+        it('should throw error for provided missing config options', () => {
             assert.throws(() => {
                 new Notifier({api_key: '1234312'});
             }, 'Required notifier parameters are missing or incorrect type')
         });
 
-        it('provided incorrect type config options', () => {
+        it('should throw error for provided incorrect type config options', () => {
             assert.throws(() => {
                 new Notifier('12314');
             }, 'Notifier configuration must be an Object.')
         });
 
-        it('checks for valid & required config options', () => {
+        it('should check for valid & required config options', () => {
             let notifier = new Notifier({api_key: '1234312', env: 'production'});
             assert.equal('1234312', notifier.config.api_key);
             assert.equal('production', notifier.config.env);
@@ -28,6 +28,13 @@ describe('Notifier', () => {
                 let notifier = new Notifier({api_key: '', env: 'production'});
                 notifier.notify(new Error('test error'));
             }, 'Incorrect or Missing API Key');
+        });
+
+        it('should throw an error if err is not an object', () => {
+            assert.throws(() => {
+                let notifier = new Notifier({api_key: '', env: 'production'});
+                notifier.notify(12134);
+            }, 'Error was not provided or is not an object.');
         });
     })
 
@@ -106,5 +113,5 @@ describe('Notifier', () => {
             assert.isString(method_name);
             assert.equal(method_name, 'Error');
         });
-    })
-})
+    });
+});
