@@ -40,3 +40,5 @@ When configuring the Notifier, these key/values are required:
     env: 'environment_name
 }
 ```
+
+This package utilizes the Honeybadger.io Exceptions API. If you'd like to learn more, please visit <https://docs.honeybadger.io/api/exceptions.html>
