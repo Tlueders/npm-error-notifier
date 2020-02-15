@@ -34,10 +34,9 @@ try{
 
 ### Notes
 When configuring the Notifier, these key/values are required:
-*Required Keys*
 ```javascript
 {
-    api: 'honeybadger_-_api_key',
+    api: 'honeybadger_api_key',
     env: 'environment_name
 }
 ```
