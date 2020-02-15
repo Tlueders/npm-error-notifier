@@ -32,7 +32,7 @@ try{
 }
 ```
 
-###Notes
+### Notes
 When configuring the Notifier, these key/values are required:
 *Required Keys*
 ```javascript
