@@ -2,7 +2,7 @@
   "name": "npm-error-notifier",
   "version": "1.0.0",
   "description": "A Node.js error notifier utilizing the Honeybadger.io Exceptions API.",
-  "main": "src/main.js",
+  "main": "lib/main.js",
   "directories": {
     "lib": "lib"
   },
