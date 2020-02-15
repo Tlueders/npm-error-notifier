@@ -6,7 +6,7 @@ describe('Notifier', () => {
         it('should throw error for provided missing config options', () => {
             assert.throws(() => {
                 new Notifier({api_key: '1234312'});
-            }, 'test')
+            }, 'Required notifier parameters are missing or incorrect type')
         });
 
         it('should throw error for provided incorrect type config options', () => {
