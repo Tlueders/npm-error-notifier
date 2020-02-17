@@ -16,7 +16,7 @@ npm install '/path/to/cloned/repo'
 ### 3. Require the npm-error-notifier package and configure
 ```javascript
 var Notifier = require('npm-error-notifier');
-var notifier = new Notifier({api: 'honeybadger-api-key', env: 'production'});
+var notifier = new Notifier({api_key: 'honeybadger-api-key', env: 'production'});
 ```
 ---
 
@@ -36,7 +36,7 @@ try{
 When configuring the Notifier, these key/values are required:
 ```javascript
 {
-    api: 'honeybadger_api_key',
+    api_key: 'honeybadger_api_key',
     env: 'environment_name
 }
 ```
