@@ -1,5 +1,5 @@
 # Node.js Error Notifier
-*NOTE: This is an unpublished NPM packaged and cannot be installed via NPM*
+*NOTE: This is an unpublished NPM package and cannot be installed via NPM*
 
 ## To install this package and test locally:
 
@@ -28,7 +28,7 @@ var notifier = new Notifier({api: 'honeybadger-api-key', env: 'production'});
 try{
     throw new Error('manually create an error');
 }catch(err) {
-    notfier.notify(err);
+    notifier.notify(err);
 }
 ```
 
