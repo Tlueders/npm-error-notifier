@@ -23,7 +23,7 @@ var notifier = new Notifier({api_key: 'honeybadger-api-key', env: 'production'})
 ### Example Usage
 ```javascript
 var Notifier = require('npm-error-notifier');
-var notifier = new Notifier({api: 'honeybadger-api-key', env: 'production'});
+var notifier = new Notifier({api_key: 'honeybadger-api-key', env: 'production'});
 
 try{
     throw new Error('manually create an error');
